@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
-  "types":"build/index.d.ts" ,
+  "types": "build/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build"
@@ -14,7 +14,10 @@
   "author": "Dinesh <dineshgiri154@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.5.9",
     "typescript": "^5.2.2"
   },
-  "files": ["build/**/*"]
+  "files": [
+    "build/**/*"
+  ]
 }
