@@ -1,0 +1,20 @@
+{
+  "name": "loggeruser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "types":"build/index.d.ts" ,
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "console log colors"
+  ],
+  "author": "Dinesh <dineshgiri154@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "files": ["build/**/*"]
+}
