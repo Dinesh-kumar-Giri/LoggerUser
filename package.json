@@ -1,34 +1,25 @@
 {
   "name": "loggeruser",
-  "version": "0.0.24",
-  "description": "stream-logs",
-  "main": "build/module/streamLogs.js",
-  "types": "build/module/streamLogs.d.ts",
+  "version": "1.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build",
-    "test": "SET NODE_OPTIONS=--experimental-vm-modules && jest --config=jest.config.ts"
+    "prepare": "npm run build"
   },
-  "jest": {
-    "transform": {},
-    "verbose": true
-  },
-  "author": "zversal",
+  "keywords": [
+    "console log colors"
+  ],
+  "author": "Dinesh <dineshgiri154@gmail.com>",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "devDependencies": {
     "@types/jest": "^29.5.4",
     "@types/node": "^20.5.9",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   },
-  "repository": "https://github.com/zversal-ecom/aws-integrations.git",
   "files": [
     "build/**/*"
-  ],
-  "dependencies": {
-  
-  }
+  ]
 }
