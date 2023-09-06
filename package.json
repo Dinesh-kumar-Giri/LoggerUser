@@ -1,5 +1,5 @@
 {
-  "name": "stream-log",
+  "name": "loggeruser",
   "version": "0.0.24",
   "description": "stream-logs",
   "main": "build/module/streamLogs.js",
@@ -7,10 +7,8 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "test":"SET NODE_OPTIONS=--experimental-vm-modules && jest --config=jest.config.ts"
-
+    "test": "SET NODE_OPTIONS=--experimental-vm-modules && jest --config=jest.config.ts"
   },
-
   "jest": {
     "transform": {},
     "verbose": true
@@ -21,13 +19,16 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
-    "typescript": "^5.1.6",
     "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.9",
     "ts-jest": "^29.1.1",
-    "@types/node": "^20.5.9"
+    "typescript": "^5.1.6"
   },
   "repository": "https://github.com/zversal-ecom/aws-integrations.git",
   "files": [
     "build/**/*"
-  ]
+  ],
+  "dependencies": {
+  
+  }
 }
