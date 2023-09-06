@@ -1,7 +1,6 @@
 {
   "name": "loggeruser",
-  "root": "  logger/",
-
+  "root": "logger/",
   "tags": ["feature:"],
   "sourceRoot": "logger/src",
   "targets": {
@@ -16,7 +15,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "logger/",
-        "commands": ["tsc"],
+        "commands": "tsc",
         "parallel": false
       }
     },
@@ -49,7 +48,6 @@
         "parallel": false
       }
     },
-
     "check:all": {
       "executor": "nx:run-commands",
       "options": {
@@ -62,10 +60,10 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "logger",
-        "commands": ["npm version {args.version}","nx build", "npm publish"],
+        "commands": ["nx run logger:build", "npm version ${args.version}", "npm publish"],
         "parallel": false
-      }
+      },
+      "dependsOn": ["build"]
     }
-  
   }
 }
