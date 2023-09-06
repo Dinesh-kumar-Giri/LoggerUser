@@ -65,6 +65,12 @@
         "commands": ["npm version {args.version}","nx build", "npm publish"],
         "parallel": false
       }
+    },
+    "overrides": {
+      "args": {
+        "version": "1.0.15"  
+      }
     }
+  
   }
 }
