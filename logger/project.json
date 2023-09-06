@@ -60,7 +60,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "logger",
-        "commands": ["nx build", "npm version ${args.version}", "npm publish"],
+        "commands": ["nx build", "npm publish"],
         "parallel": false
       },
       "dependsOn": ["build"]
