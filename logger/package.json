@@ -1,6 +1,6 @@
 {
   "name": "loggeruser",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "src/module/streamLogs.ts",
   "types": "build/streamLogs.d.ts",
