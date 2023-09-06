@@ -1,0 +1,25 @@
+{
+  "name": "loggeruser",
+  "version": "1.0.9",
+  "description": "",
+  "main": "src/module/streamLogs.ts",
+  "types": "build/streamLogs.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "console log colors"
+  ],
+  "author": "Dinesh <dineshgiri154@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.9",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "build/**/*"
+  ]
+}

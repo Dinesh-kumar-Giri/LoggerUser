@@ -1,0 +1,31 @@
+{
+  "env": {
+    "es2022": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": "eslint:recommended",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": 0,
+    // "linebreak-style": ["error", "windows"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "one-var": [
+      "error",
+      { "var": "always", "let": "always", "const": "never" }
+    ],
+    "padded-blocks": [
+      "error",
+      { "blocks": "never", "classes": "always", "switches": "never" }
+    ],
+    "sort-keys": "off",
+    "object-curly-spacing": ["error", "always"],
+    "curly": ["error", "multi"]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "loggeruser",
+  "root": "  logger/",
+
+  "tags": ["feature:"],
+  "sourceRoot": "logger/src",
+  "targets": {
+    "build:clean": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "logger",
+        "command": "rm -rf ./build"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "logger/",
+        "commands": ["tsc"],
+        "parallel": false
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "logger",
+        "command": "SET NODE_OPTIONS=--experimental-vm-modules && jest --config=jest.config.ts"
+      }
+    },
+    "test:linux": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "logger",
+        "command": "export NODE_OPTIONS=--experimental-vm-modules && jest "
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "logger",
+        "commands": ["prettier . --check --write", "eslint --fix"]
+      }
+    },
+    "formatter": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "logger",
+        "commands": ["prettier . --check --write", "nx lint"],
+        "parallel": false
+      }
+    },
+
+    "check:all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "logger",
+        "commands": ["nx formatter", "nx test"],
+        "parallel": false
+      }
+    },
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "logger",
+        "commands": ["npm version patch", "nx build", "npm publish"],
+        "parallel": false
+      }
+    }
+  }
+}
