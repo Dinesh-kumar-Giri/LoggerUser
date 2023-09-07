@@ -62,8 +62,7 @@
         "cwd": "logger",
         "commands": ["nx build", "npm publish"],
         "parallel": false
-      },
-      "dependsOn": ["build"]
+      }
     }
   }
 }

@@ -1,13 +1,9 @@
 {
   "name": "loggeruser",
-  "version": "1.0.11",
+  "version": "1.0.16",
   "description": "",
-  "main": "src/module/streamLogs.ts",
-  "types": "build/streamLogs.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
-  },
+  "main": "build/module/streamLogs.js",
+  "types": "build/module/streamLogs.d.ts",
   "keywords": [
     "console log colors"
   ],

@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS",
-    "declaration": true,
+    "module": "CommonJS",//for node js me use krne ke liye
+    "declaration": true,// jab build banegi toh hume decrition mil jaiye gi
     "outDir": "./build",
     "strict": true
   },
