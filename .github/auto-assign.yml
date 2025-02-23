@@ -1,0 +1,17 @@
+assignees:
+  - reviewer1
+  - reviewer2
+
+reviewers:
+  - reviewer3
+  - reviewer4
+
+addReviewers: true
+addAssignees: true
+
+# Optional: Assign based on labels
+labelReviewers:
+  frontend:
+    - frontend-team
+  backend:
+    - backend-team
